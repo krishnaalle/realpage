@@ -1,0 +1,55 @@
+.input_group{
+    @apply flex border-b-2 bg-transparent border-gray-500;
+    position: relative;
+    @apply focus:outline-none
+}
+.input_field_group{
+    @apply border-b-2 bg-transparent border-gray-500;
+    position: relative;
+    @apply focus:outline-none
+}
+.input_text{
+    @apply w-full bg-transparent ;
+    @apply focus:outline-none border-none border-gray-500  ;
+}
+.button{
+    @apply w-1/4 text-center bg-blue-500 rounded-md;
+    @apply py-2 text-gray-50 text-lg;
+}
+.button:hover{
+    @apply bg-gradient-to-r from-gray-50 to-gray-100 border-blue-500;
+    @apply text-gray-700 border;
+}
+.button_custom{
+    @apply w-full border py-3 flex justify-center gap-2 hover:bg-gray-200
+}
+.reset_button{
+    @apply bg-blue-500 rounded-md; 
+    @apply py-2 text-gray-50 text-lg;
+}
+.input_text+*{
+    color: #cbd5e1;
+}
+.input_text:focus+*{
+    color: #3b82f6;
+}
+.input_text:not([type=email]) + span:hover {
+    color: #3b82f6;
+    cursor: pointer;
+}
+.captcha_group{
+    display: flex;
+}
+#reload_captcha{
+    margin-left: 20px;
+}
+.user_role{
+    justify-content: start  ;
+}
+.forgot_password_link {
+    color: rgb(39, 117, 242); /* Change the color to your desired color */
+  }
+
+.admin_login_link {
+color: rgb(39, 117, 242);; /* Change the color to your desired color */
+}
